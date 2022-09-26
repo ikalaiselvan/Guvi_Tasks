@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.zeroo {
+    grid-area: zeroo;
+}
+
+.mod {
+    grid-area: mod;
+}
+
+.clear {
+    grid-area: clear;
+}
+
+.back {
+    grid-area: back;
+}
+
+.dott {
+    grid-area: dott;
+}
+
+.mul {
+    grid-area: mul;
+}
+
+.divide {
+    grid-area: divide;
+}
+
+.minus {
+    grid-area: minus;
+}
+
+.plus {
+    grid-area: plus;
+}
+
+.equal {
+    grid-area: equal;
+}
+
+.grid-container>input {
+    grid-area: input;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    font-size: 40px;
+    width: 100%;
+    text-align: end;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    background-color: #f5f5ff;
+    box-shadow: 0px 0px 20px rgba(66, 255, 192, 0.5);
+}
+
+
+/* .grid-container>input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+} */
+
+.grid-container>button {
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0px 0px 3px rgba(66, 255, 192, 0.5);
+}
+
+.grid-container>button:active {
+    background-color: #8ccd9c;
+    transform: translateY(5px);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'input input input input' 'clear back mod mul' 'seven eight nine divide' 'four five six minus' 'one two three plus' 'zeroo dott equal equal';
+    gap: 5px;
+    border: 2px solid rgb(141, 140, 140);
+    background-color: rgb(231, 208, 212);
+    border-radius: 5px;
+    width: 380px;
+    height: 550px;
+    text-align: center;
+    padding: 6px;
+    box-shadow: 0px 0px 20px rgba(111, 44, 219, 0.5);
+    grid-template-rows: 90px;
+}
+
+#memory {
+    position: absolute;
+    display: none;
+}
+
+h1 {
+    font-size: 50px;
+    text-shadow: 0px 0px 10px rgba(252, 55, 55, 0.5);
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 380px) {
+    .grid-container {
+        width: 100%;
+        height: flexible;
+    }
+}
