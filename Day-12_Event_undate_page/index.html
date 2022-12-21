@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .button {
+            margin: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .cont,
+        .cont-2 {
+            margin: 5px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        
+        .container2 {
+            display: flex;
+            justify-content: space-around;
+        }
+        .col1-img {
+            border: 1px solid black;
+            height: 300px;
+            width: 200px;
+            margin: 15px;
+        }
+        .col1-img, .col1-img img{
+            border-radius: 15px;
+        }
+
+
+    </style>
+</head>
+
+<body class="row justify-content-center">
+    <div class="cont container">
+        <div class="title d-flex flex-column align-items-center">
+            <h2>Event 1</h2>
+            <p>Number of available seats: 23</p>
+        </div>
+        <div class="row cont-2 row justify-content-center">
+
+            <div class="col-md-4 row justify-content-center col align-self-center">
+                <div class="col1-img">
+                    <img class="img-fluid" style = 'height: 100%; width: 100%;' src="https://tse1.mm.bing.net/th?id=OIP.QoeUFvAU_gHfkvf4q8q3VgHaL2&pid=Api&P=0" alt="nature">
+                </div>
+            </div>
+            <form class = "col-md-8">
+                <div class="form-group row mt-4">
+                    <label for="name" class="col-sm-3 col-form-label">Name: </label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-sm-3 col-form-label">Email: </label>
+                    <div class="col-sm-9">
+                      <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="phone" class="col-sm-3 col-form-label">Phone No: </label>
+                    <div class="col-sm-9">
+                      <input type="Number" class="form-control" id="phone" placeholder="Phone Number">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="seats" class="col-sm-3 col-form-label">Numberof seats: </label>
+                    <div class="col-sm-9">
+                      <input type="Number" class="form-control" id="seats" placeholder="Numberof seats">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="attendee" class="col-sm-3 col-form-label">Name of Attendee 2: </label>
+                    <div class="col-sm-9">
+                      <input type="email" class="form-control" id="attendee" placeholder="Name of Attendee">
+                    </div>
+                </div>
+
+                <div class="button">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Cancel</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
